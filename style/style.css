@@ -6,7 +6,9 @@
   font-weight: 500;
   font-style: normal;
 }
-
+body{
+    overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -47,6 +49,13 @@
     font-weight: bold;
     margin: 60px 0px;
 }
+/* marquee style */
+ .marquee{
+    padding: 10px 0px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+ }
 
 /* header style */
 .header{
@@ -106,7 +115,7 @@
 
 /* main style */
 main{
-    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     background-image: url("../assets/bg.png");
     background-size: cover;
@@ -115,7 +124,9 @@ main{
 
 }
 /* curriculum style */
-
+.curriculum{
+    margin-top: 140px;
+}
 .curriculum-cards{
     gap: 80px; 
     justify-content: center;
@@ -167,7 +178,90 @@ main{
     align-items: center;
 }
 
-
+/* our stories style */
+.stories{
+    /* max-width: 1440px; */
+    width: 100%;
+    background:url('../assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    overflow-x: hidden;
+    padding: 100px 0px;
+}
+.stories-container{
+    max-width: 1140px;
+    width: 85%;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 30px;
+}
+.right-stories{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.left-stories{
+    border: none;
+    background-color: white;
+    border-radius: 12px;
+    width: 540px;
+}
+.left-stories > img{
+    width: 100%;
+    position: relative;
+    border-radius: 12px 12px 0px 0px;
+}
+.left-stories-content{
+    padding: 30px;
+    text-align: justify;
+}
+.left-stories-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.left-stories-desc{
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #808080;
+}
+.left-btn{
+    border-radius: 47px;
+    background-color: #05D4DF;
+    padding: 10px 20px;
+    position: relative;
+    top: -30px;
+    right: 100px;
+}
+.right-stories-card{
+    border: none;
+    background-color: white;
+    max-width: 290px;
+    border: none;
+    border-radius: 12px;
+}
+.right-stories-card > img{
+    position: relative;
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+    
+}
+.right-stories-title{
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0px 30px 30px 30px;
+    text-align: justify;
+}
+.right-btn{
+    border-radius: 47px;
+    background-color: orange;
+    padding: 10px 20px;
+    position: relative;
+    top: -30px;
+    right: 0px;
+    font-size: 0.9rem;
+}
+.btn-stories{
+    background-color: black;
+}
 
 
 /* footer style */
@@ -177,7 +271,7 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 123px 228px 174px 140px;
-    margin-top: 50px;
+    
 }
 .footer-brand-name{
     font-size: 2rem;
@@ -214,7 +308,9 @@ footer{
 @media screen and (max-width:576px) {
     .brand-name, 
     .nav-btn,
-    .arrow{
+    .arrow,
+    .left-stories,
+    .marquee{
         display: none;
     }
     .navbar , .navbar > ul, footer {
@@ -240,12 +336,39 @@ footer{
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        margin-top: 0px;
     }
     .section-title{
         font-size: 1.65rem;
         margin-top: 50px;
         margin-bottom: 20px;
     }
+   .right-stories{
+        gap: 10px;
+   }
+   .right-stories-title{
+    font-size: 12px;
+   }
+   .right-btn{
+    padding: 10px 10px;
+    font-size: 10px;
+    top: -20px;
+}
+   .stories-container{
+        display: block;
+        width: 100%;
+        padding:0px 20px;
+        column-gap: 0;
+        margin: 30px 0px 40px 0px;
+   }
+    .stories{
+        padding: 30px 0px 80px 0px;
+        margin: 0;
+    }
+    .stories > .section-title{
+        margin: 0;
+    }
+
     footer{
         align-items: start;
         padding: 40px 20px;
