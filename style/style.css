@@ -44,6 +44,9 @@ body{
 .txt-purple{
     color: #5D58EF;
 }
+.bg-purple{
+    background-color: #5D58EF;
+}
 .section-title{
     font-size: 2.87rem;
     font-weight: bold;
@@ -272,14 +275,18 @@ main{
     padding: 0px 30px 30px 30px;
     text-align: justify;
 }
+
 .right-btn{
     border-radius: 47px;
-    background-color: orange;
+    background-color: #95B226;
     padding: 10px 20px;
     position: relative;
     top: -30px;
     right: 0px;
     font-size: 0.9rem;
+}
+#right-btn-2{
+    background-color: #5D58EF;
 }
 .btn-stories{
     background-color: black;
