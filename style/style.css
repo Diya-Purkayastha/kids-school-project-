@@ -118,7 +118,8 @@ main{
 
 .curriculum-cards{
     gap: 80px; 
-    justify-content: center; 
+    justify-content: center;
+    margin: 80px 0px; 
 }
 .curriculum-card{
     width: 370px;
@@ -149,6 +150,25 @@ main{
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
 }
+.arrow{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.arrow-sign{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: orange;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 /* footer style */
 footer{
@@ -193,7 +213,8 @@ footer{
 /* small device */
 @media screen and (max-width:576px) {
     .brand-name, 
-    .nav-btn{
+    .nav-btn,
+    .arrow{
         display: none;
     }
     .navbar , .navbar > ul, footer {
