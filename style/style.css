@@ -313,6 +313,7 @@ footer{
     .marquee{
         display: none;
     }
+    
     .navbar , .navbar > ul, footer {
         flex-direction: column;
         align-items: center;
@@ -337,6 +338,10 @@ footer{
         gap: 20px;
         align-items: center;
         margin-top: 0px;
+        
+    }
+    .curriculum-card{
+        width: calc(100% - 40px);
     }
     .section-title{
         font-size: 1.65rem;
