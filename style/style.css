@@ -32,6 +32,12 @@ body{
     border: none;
     border-radius: 12px;
 }
+.btn:hover{
+    background-color: rgba(255, 166, 0, 0.745);
+}
+.btn:active{
+    background-color: rgba(255, 166, 0, 0.545);
+}
 .txt-orange{
     color: orange;
 }
@@ -137,16 +143,21 @@ body{
 .banner-btn{
     background-color: black;
 }
+.banner-btn:hover{
+    background-color: rgba(0, 0, 0, 0.734);
+}
+.banner-btn:active{
+    background-color: rgba(0, 0, 0, 0.489);
+}
 
 /* main style */
 main{
     width: 100%;
     margin: 0 auto;
     background-image: url("../assets/bg.png");
-    background-size: cover;
+    background-size: auto;
     background-repeat: repeat;
     text-align: center;
-
 }
 /* curriculum style */
 .curriculum{
@@ -207,7 +218,7 @@ main{
 .stories{
     /* max-width: 1440px; */
     width: 100%;
-    background:url('../assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background:linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
     overflow-x: hidden;
     padding: 100px 0px;
 }
@@ -256,6 +267,12 @@ main{
     top: -30px;
     right: 100px;
 }
+.left-btn:hover{
+    background-color: #06e6f2;
+}
+.left-btn:active{
+    background-color: #00f2ff;
+}
 .right-stories-card{
     border: none;
     background-color: white;
@@ -285,11 +302,23 @@ main{
     right: 0px;
     font-size: 0.9rem;
 }
+.right-btn:hover{
+    background-color: #a3c41e;
+}
 #right-btn-2{
     background-color: #5D58EF;
 }
+#right-btn-2:hover{
+    background-color: #4039f4;
+}
 .btn-stories{
     background-color: black;
+}
+.btn-stories:hover{
+    background-color: rgba(0, 0, 0, 0.653);
+}
+.btn-stories:active{
+    background-color: rgba(0, 0, 0, 0.41);
 }
 
 
